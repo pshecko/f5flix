@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5Flix | Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <input class="menu-control" type="checkbox" id="nav-menu-toggle">
+            <label class="menu-toggle" for="nav-menu-toggle">
+                <span class="sr-only">Abrir menu</span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <a class="logo" href="index.html">
+                <img src="images/F5-Logo.png" alt="Logo de F5Flix">
+            </a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Peliculas</a></li>
+                <li><a href="catalogo.html#series">Series</a></li>
+                <li><a href="index.html#mas-visto">Lo mas visto</a></li>
+                <li><a href="#formulario-alta">Date de alta</a></li>
+                <li><a href="#comentarios">Contacto</a></li>
+            </ul>
+            <a class="user" href="contacto.html">
+                <img src="images/user-regular.svg" alt="Icono de usuario">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Alta y contacto</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt, dolor vel porta convallis, dui elit feugiat velit, sit amet congue ipsum urna ut augue.</p>
+        </section>
+        <section id="formulario-alta" class="section">
+            <h2>Formulario de registro</h2>
+            <form action="contacto.html" method="get">
+                <p>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </p>
+                <p>
+                    <label for="correo">Correo electronico</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+                </p>
+                <p>
+                    <label for="password">Contrasena</label><br>
+                    <input type="password" id="password" name="password" required>
+                </p>
+                <p>
+                    <label for="fecha">Fecha de nacimiento</label><br>
+                    <input type="date" id="fecha" name="fecha-nacimiento">
+                </p>
+                <fieldset class="full">
+                    <legend>Plan favorito</legend>
+                    <label>
+                        <input type="radio" name="plan" value="cine" checked>
+                        Cine
+                    </label>
+                    <label>
+                        <input type="radio" name="plan" value="series">
+                        Series
+                    </label>
+                    <label>
+                        <input type="radio" name="plan" value="completo">
+                        Completo
+                    </label>
+                </fieldset>
+                <p>
+                    <label for="genero">Genero preferido</label><br>
+                    <select id="genero" name="genero">
+                        <option value="drama">Drama</option>
+                        <option value="accion">Accion</option>
+                        <option value="ciencia-ficcion">Ciencia ficcion</option>
+                        <option value="comedia">Comedia</option>
+                    </select>
+                </p>
+                <fieldset class="full">
+                    <legend>Intereses</legend>
+                    <label>
+                        <input type="checkbox" name="intereses" value="estrenos">
+                        Recibir estrenos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="intereses" value="promociones">
+                        Recibir promociones
+                    </label>
+                    <label>
+                        <input type="checkbox" name="intereses" value="festivales">
+                        Recibir noticias de festivales
+                    </label>
+                </fieldset>
+                <p id="comentarios" class="full">
+                    <label for="mensaje">Comentario</label><br>
+                    <textarea id="mensaje" name="comentario" rows="6" cols="40" placeholder="Escribe aqui tu mensaje"></textarea>
+                </p>
+                <p>
+                    <label for="archivo">Sube una imagen de perfil</label><br>
+                    <input type="file" id="archivo" name="avatar">
+                </p>
+                <p class="buttons full">
+                    <button type="submit">Enviar formulario</button>
+                    <button type="reset">Borrar datos</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 F5Flix.</p>
+    </footer>
+</body>
+</html>

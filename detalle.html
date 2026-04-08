@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5Flix | Detalle</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <input class="menu-control" type="checkbox" id="nav-menu-toggle">
+            <label class="menu-toggle" for="nav-menu-toggle">
+                <span class="sr-only">Abrir menu</span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <a class="logo" href="index.html">
+                <img src="images/F5-Logo.png" alt="Logo de F5Flix">
+            </a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Peliculas</a></li>
+                <li><a href="catalogo.html#series">Series</a></li>
+                <li><a href="index.html#mas-visto">Lo mas visto</a></li>
+                <li><a href="contacto.html">Date de alta</a></li>
+                <li><a href="contacto.html#comentarios">Contacto</a></li>
+            </ul>
+            <a class="user" href="contacto.html">
+                <img src="images/user-regular.svg" alt="Icono de usuario">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="detail">
+            <header>
+                <p class="tag">Pelicula destacada</p>
+                <h1>The Godfather</h1>
+                <p>Drama criminal | 1972 | +18 | 175 min</p>
+            </header>
+
+            <section class="section detail-top">
+                <img src="images/films/thegoodfather.avif" alt="Cartel de The Godfather">
+                <div>
+                    <h2>Resumen</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue, lorem at dapibus tincidunt, arcu lorem aliquet libero, in ultrices mauris libero ut lectus.</p>
+                    <video class="video" controls preload="metadata">
+                        <source src="video/BatmanTriller.mp4" type="video/mp4">
+                        Tu navegador no puede reproducir este video.
+                    </video>
+                    <p class="buttons">
+                        <a class="btn" href="catalogo.html">Volver al catalogo</a>
+                        <a class="btn" href="contacto.html">Quiero recibir novedades</a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Sinopsis ampliada</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus semper erat, et vulputate lectus pellentesque vitae. Morbi vel orci sem. Proin ut tempor risus. Duis non ante pharetra, porttitor lectus non, luctus tortor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, ex sed pellentesque faucibus, mauris mi tincidunt mauris, non consequat velit sapien a mi. Integer blandit volutpat finibus.</p>
+            </section>
+
+            <section class="section">
+                <h2>Ficha tecnica</h2>
+                <dl>
+                    <dt>Direccion</dt>
+                    <dd>Lorem Ipsum</dd>
+                    <dt>Guion</dt>
+                    <dd>Lorem Ipsum</dd>
+                    <dt>Reparto principal</dt>
+                    <dd>Lorem ipsum, dolor sit amet, consectetur adipiscing elit.</dd>
+                    <dt>Puntuacion</dt>
+                    <dd>9,4/10</dd>
+                </dl>
+            </section>
+
+            <section class="section">
+                <h2>Tambien te puede interesar</h2>
+                <div class="grid">
+                    <article>
+                        <img src="images/films/Goodfellas.jpg" alt="Cartel de Goodfellas">
+                        <h3><a href="detalle.html">Goodfellas</a></h3>
+                        <p><a class="btn" href="detalle.html">Ver detalle</a></p>
+                    </article>
+                    <article>
+                        <img src="images/films/pulpfiction.jpg" alt="Cartel de Pulp Fiction">
+                        <h3><a href="detalle.html">Pulp Fiction</a></h3>
+                        <p><a class="btn" href="detalle.html">Ver detalle</a></p>
+                    </article>
+                    <article>
+                        <img src="images/films/Se7en.jpg" alt="Cartel de Se7en">
+                        <h3><a href="detalle.html">Se7en</a></h3>
+                        <p><a class="btn" href="detalle.html">Ver detalle</a></p>
+                    </article>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 F5Flix.</p>
+    </footer>
+</body>
+</html>
