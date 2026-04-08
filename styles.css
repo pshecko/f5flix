@@ -3,7 +3,6 @@
     --header-offset: 6.75rem;
     --content-gap: 1rem;
     --section-gap: 2rem;
-    --card-min-width: 216px;
     --space-xs: 0.5rem;
     --space-sm: 0.75rem;
     --space-md: 1rem;
@@ -287,9 +286,8 @@ small {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, var(--card-min-width));
+    grid-template-columns: repeat(5, 1fr);
     gap: var(--content-gap);
-    justify-content: space-evenly;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -436,8 +434,6 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.875rem var(--space-md);
-    max-width: 820px;
-    margin: 0 auto;
 }
 
 form p,
@@ -539,6 +535,10 @@ body > footer p {
         margin-right: auto;
     }
 
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     form > .full {
         grid-column: auto;
     }
@@ -617,6 +617,10 @@ body > footer p {
     .menu a {
         display: block;
         padding: 0.75rem 0.9rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .buttons {
